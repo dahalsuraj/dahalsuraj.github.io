@@ -27,8 +27,7 @@ The Centos address of Master is <b>192.XXX.XX.XXX</b>, which acts as  master dat
 
 The Centos address of slave is <b>192.XXX.XX.YYY</b>, which acts as slave database server.
  
-
- ## Configuration and environment setup
+## Configuration and environment setup
   We need to configure Firewall for database access. If firewall is disabled ,we can skip otherwise we need to apply the TCP Port 3306 rule that adds a Firewall Policy and  allows traffic on port 3306(MySQL default port) .
 
   For root login we  can have command <b>sudo su </b> as
