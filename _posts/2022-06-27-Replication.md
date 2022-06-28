@@ -8,7 +8,7 @@ tags:
 ---
 
 # Setup 2 nodes master slave replication in VM machine
-   MySQL replication is a real-time mechanism and and one-way process that
+   MySQL replication is a real-time mechanism and one-way process that
 enables data  to be copied automatically from one MySQL database server (the master) to another one or more MySQL
 database servers (the slaves) as backup server.
 
