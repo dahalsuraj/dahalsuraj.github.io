@@ -73,7 +73,7 @@ SELINUXTYPE=targeted
 My setup  in VirtualBox uses two NICs.  The first uses "host-only" connection that allows my host and other virtual machines to interact. 
 
 VirtualBox can create several of these virtual host-only networks.<br/>
-![Host-only adapter](../assets/images/host_only.png)
+![Host-only adapter](/assets/images/host_only.png)
 <br/>
 To create a host-only connection in VirtualBox, start by opening the preferences in VirtualBox. Go to the "Network" tab, and addd a Host-only Network.Also,  use <b>ALLow All</b> tab for <b>Promiscuous Mode</b>
 
@@ -84,7 +84,7 @@ To create a host-only connection in VirtualBox, start by opening the preferences
 The second is a NAT to allow the box to communicate with the outside world through my host computer’s network connection. 
 (NAT is the default, so shouldn't require any setup.).We'll be able to download packages,check email,browse the website and so on. 
 
-![](../assets/images/NAT.png)
+![](/assets/images/NAT.png)
 
 
 Next, assign this NAT adapter to the virtual machine. Select the VM and press "Settings". Go to the "Network" tab, and select "Adpater 2". Enable the adapter, set it to a "NAT".
