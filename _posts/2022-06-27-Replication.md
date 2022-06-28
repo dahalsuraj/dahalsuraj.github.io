@@ -7,7 +7,7 @@ tags:
   - Mysql Replication
 ---
 
-# <b>Setup 2 nodes master slave replication in VM machine</b>
+# Setup 2 nodes master slave replication in VM machine
    MySQL replication is a real-time mechanism and and one-way process that
 enables data  to be copied automatically from one MySQL database server (the master) to another one or more MySQL
 database servers (the slaves) as backup server.
@@ -18,7 +18,7 @@ application up and running when there is down due to any difficulties.
 
 Mysql natively provides an easy way to replicate data from one server to another server.
 
-## <b>Prerequisities</b>
+## Prerequisities
 1)  Two machines with CentOs 7 installed in Virtual machine 
 
 2) Install  Mysql  on both machines(i.e. master and slave server)
@@ -28,7 +28,7 @@ The Centos address of Master is <b>192.XXX.XX.XXX</b>, which acts as  master dat
 The Centos address of slave is <b>192.XXX.XX.YYY</b>, which acts as slave database server.
  
 
- ## <b>Configuration and environment setup</b>
+ ## Configuration and environment setup
   We need to configure Firewall for database access. If firewall is disabled ,we can skip otherwise we need to apply the TCP Port 3306 rule that adds a Firewall Policy and  allows traffic on port 3306(MySQL default port) .
 
   For root login we  can have command <b>sudo su </b> as
@@ -69,7 +69,7 @@ SELINUXTYPE=targeted
 ```
 
 
-### <b>Network connection </b>
+### Network connection 
 My setup  in VirtualBox uses two NICs.  The first uses "host-only" connection that allows my host and other virtual machines to interact. 
 
 VirtualBox can create several of these virtual host-only networks.<br/>
@@ -89,7 +89,7 @@ The second is a NAT to allow the box to communicate with the outside world throu
 
 Next, assign this NAT adapter to the virtual machine. Select the VM and press "Settings". Go to the "Network" tab, and select "Adpater 2". Enable the adapter, set it to a "NAT".
 
-### <b>For connection between host and VM's:</b>
+### For connection between host and VM's:
 
 I did ping and telnet to test whether two machines  communicate  or not .
 
@@ -102,7 +102,7 @@ If there is data returned then we can be sure there is a connection.
  
 
 
-### <b>Installation </b>
+### Installation
  
 At first , we need to  install and configure MySQL 5.6 on both master ans slave server.
 
@@ -212,7 +212,7 @@ Master Server : 192.xxx.xx.xx
 
 Slave Server: 192.xxx.xx.yy
 
- # <b> MASTER SERVER CONFIGURATION:</b>
+ # MASTER SERVER CONFIGURATION:
 
 We need to setup these steps to configure Master.
 
@@ -389,7 +389,7 @@ We must see a database named “testdb”. If we  can see the database, MySQL re
 Thus, this all about the setup for the Mysql master slave replication.
 
 
-# <b>References</b>
+# References
 1.https://christophermaier.name/2010/09/01/host-only-networking-with-virtualbox/
 
 2.https://www.interserver.net/tips/kb/create-master-slave-replication-mysql-server/
